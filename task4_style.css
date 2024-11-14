@@ -9,7 +9,7 @@ conditioned by media-querries for Tablet & Desktop */
     display: grid;
     /* align-items:  center; */
     height: auto;
-    grid-template-rows: repeat(1, fr);
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     gap: 50px;
 }
 
@@ -35,24 +35,22 @@ div {
     background-color: lightpink;
 }
 
-.box5 {
-    background-color: lightgreen;
-}
 
+/* SOLUTION WITH QUERY */
 /* Tablet */
-@media (width >=768px) {
+/* @media (width >=768px) {
     .flex {
         grid-template-columns: repeat(3, 1fr);
 
     }
-}
+} */
 
 /* Desktop */
-@media (width >=1024px) {
+/* @media (width >=1024px) {
     .flex {
         grid-template-columns: repeat(5, 1fr);
     }
 
-}
+} */
 
 /* shortcuts for vscode - gtc =  grid-template-columns*/
